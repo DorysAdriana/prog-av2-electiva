@@ -1,0 +1,54 @@
+*
+  margin: 0
+  padding: 0
+$color_b: #0078D5
+
+//mixins
+
+=border-radius($radio)
+  -webkit-border-radius: $radio
+  -moz-border-radius: $radio
+  -ms-border-radius: $radio
+  border-radius: $radio
+body
+  background: #F4F3DD
+  color: #111
+
+a
+  text-decoration:none
+
+a.hover
+  text-decoration:underline
+
+.contenedor
+  width: 90%
+  max-width: 900px
+  margin: 2em auto
+
+/*header*/
+header
+  margin-bottom: 1.5em
+  nav
+      a
+        padding: 1.5em
+        color: #FFF
+        text-decoration:none
+        background: rgba($color_b, .5) 
+        display: inline-block
+        margin-right: 1.5em
+        +border-radius(50px)
+
+        &:hover
+          background: #FF841B
+          text-decoration: none
+.main
+  //article
+  article
+    padding: 1.5em
+    background: #FFF
+    margin-bottom: 1.5em
+    box-shadow: 5px 5px 2px #000
+    h1
+      color: $color_b
+
+  
